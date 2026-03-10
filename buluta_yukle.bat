@@ -35,3 +35,4 @@ echo ------------------------------------------------------
 echo.
 
 pause
+git remote add origin https://github.com/ygulen651/nobet-api.git
