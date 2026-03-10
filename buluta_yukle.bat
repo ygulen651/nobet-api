@@ -3,36 +3,38 @@ setlocal
 chcp 65001 > nul
 
 echo ======================================================
-echo    NOBETCI ECZANE - BULUTA YUKLEME (GITHUB)
+echo    NOBETCI ECZANE - TAM OTOMATIK BULUT YUKLEME
 echo ======================================================
 echo.
-echo Bu islem, bilgisayarin kapali olsa bile calisacak olan
-echo "Bulut Otomasyonu"nu aktif etmek icin gereklidir.
-echo.
-
-:: Git kontrolu
-git --version >nul 2>&1
-if %errorlevel% neq 0 (
-    echo [HATA] Git yuklu degil! Lutfen once Git kur: https://git-scm.com/
-    pause
-    exit
-)
-
-:: Git islemleri
+echo 1. Git ayarlanıyor...
 git init
 git add .
-git commit -m "Bulut otomasyonu eklendi"
+git commit -m "Bulut otomasyonu aktifleştirildi"
 git branch -M main
 
 echo.
-echo ------------------------------------------------------
-echo SIMDI YAPMAN GEREKENLER:
-echo 1. GitHub.com'da yeni bir repo olustur (ad Gecen: nobet-api)
-echo 2. Asagidaki komutu kendine gore duzenleyip buraya yapistir:
-echo    git remote add origin https://github.com/KULLANICI_ADIN/nobet-api.git
-echo 3. Son olarak su komutu yaz: git push -u origin main
-echo ------------------------------------------------------
-echo.
-
-pause
+echo 2. GitHub bağlantısı kuruluyor...
+:: Eski bağlantı varsa temizle
+git remote remove origin >nul 2>&1
 git remote add origin https://github.com/ygulen651/nobet-api.git
+
+echo.
+echo 3. Kodlar GitHub'a gönderiliyor...
+echo [NOT] Eğer kullanıcı adı/şifre sorarsa lütfen giriş yap.
+git push -u origin main
+
+if %errorlevel% neq 0 (
+    echo.
+    echo [HATA] Yükleme sırasında bir sorun oluştu. 
+    echo Lütfen internet bağlantını ve GitHub reposunu kontrol et.
+) else (
+    echo.
+    echo ======================================================
+    echo 🎉 İŞLEM TAMAM! 
+    echo Artık bilgisayarın kapalı olsa da sistem çalışacak.
+    echo ======================================================
+)
+
+echo.
+echo Bu pencereyi kapatabilirsin.
+pause
