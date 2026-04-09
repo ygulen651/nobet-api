@@ -8,7 +8,12 @@ from selenium.webdriver.common.by import By
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 
-PYTHONANYWHERE_API = "https://yusuf7007.pythonanywhere.com/api/update"
+# Hedef API adresleri (Buraya kendi Render adresini ekleyeceksin)
+TARGET_APIS = [
+    os.environ.get("RENDER_API_URL", ""), # Render URL (GitHub Secrets'tan gelecek)
+    "https://yusuf7007.pythonanywhere.com/api/update" # Mevcut adres
+]
+
 NOBET_URL = "https://www.karamaneo.org.tr/nobet-listesi"
 
 def fetch_and_update():
@@ -44,23 +49,33 @@ def fetch_and_update():
             print(f"❌ Hata: Alınan HTML çok kısa ({len(html_content)} karakter). Bot korumasına takılmış olabilir.")
             return False
             
-        print(f"📦 HTML alındı ({len(html_content)} karakter). PythonAnywhere'e gönderiliyor...")
+        print(f"📦 HTML alındı ({len(html_content)} karakter). Bulut sunucularına gönderiliyor...")
         
-        response = requests.post(
-            PYTHONANYWHERE_API,
-            json={'html': html_content},
-            timeout=60
-        )
+        success_count = 0
+        for api_url in TARGET_APIS:
+            if not api_url: continue
+            
+            print(f"📡 Gönderiliyor: {api_url}")
+            try:
+                response = requests.post(
+                    api_url,
+                    json={'html': html_content},
+                    timeout=60
+                )
+                
+                if response.status_code == 200:
+                    result = response.json()
+                    if result.get('success'):
+                        print(f"✅ BAŞARILI: {api_url} güncellendi!")
+                        success_count += 1
+                    else:
+                        print(f"❌ API Hatası ({api_url}): {result.get('error')}")
+                else:
+                    print(f"❌ HTTP Hatası ({api_url}): {response.status_code}")
+            except Exception as e:
+                print(f"⚠️ İletişim Hatası ({api_url}): {e}")
         
-        if response.status_code == 200:
-            result = response.json()
-            if result.get('success'):
-                print("🎉 BAŞARILI: PythonAnywhere güncellendi!")
-                return True
-            else:
-                print(f"❌ API Hatası: {result.get('error')}")
-        else:
-            print(f"❌ HTTP Hatası: {response.status_code}")
+        return success_count > 0
             
     except Exception as e:
         print(f"💥 KRİTİK HATA: {str(e)}")

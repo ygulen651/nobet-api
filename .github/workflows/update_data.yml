@@ -25,4 +25,6 @@ jobs:
         pip install requests selenium
 
     - name: Güncellemeyi Çalıştır
+      env:
+        RENDER_API_URL: ${{ secrets.RENDER_API_URL }}
       run: python cloud_updater.py
