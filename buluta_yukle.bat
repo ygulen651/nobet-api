@@ -6,10 +6,15 @@ echo ======================================================
 echo    NOBETCI ECZANE - TAM OTOMATIK BULUT YUKLEME
 echo ======================================================
 echo.
+echo.
+echo 0. Veriler güncelleniyor...
+"C:\Users\ugiaj\AppData\Local\Programs\Python\Python313\python.exe" "%~dp0update_all.py"
+
+echo.
 echo 1. Git ayarlanıyor...
 git init
 git add .
-git commit -m "Bulut otomasyonu aktifleştirildi"
+git commit -m "Veriler güncellendi ve buluta hazır hale getirildi"
 git branch -M main
 
 echo.

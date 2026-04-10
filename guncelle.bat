@@ -11,7 +11,7 @@ echo.
 
 :: %~dp0 mevcut dosyanin bulundugu klasoru temsil eder.
 :: Turhce karakter sorununu onlemek icin dinamik yol kullaniyoruz.
-"C:\Users\ugiaj\AppData\Local\Programs\Python\Python313\python.exe" "%~dp0update_pythonanywhere.py"
+"C:\Users\ugiaj\AppData\Local\Programs\Python\Python313\python.exe" "%~dp0update_all.py"
 
 echo.
 echo ======================================================
