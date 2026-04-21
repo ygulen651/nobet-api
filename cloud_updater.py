@@ -4,6 +4,8 @@ import os
 import sys
 from selenium import webdriver
 from selenium.webdriver.chrome.options import Options
+from selenium.webdriver.chrome.service import Service
+from webdriver_manager.chrome import ChromeDriverManager
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
@@ -33,7 +35,8 @@ def fetch_and_update():
     driver = None
     try:
         print(f"Kaynak siteye gidiliyor: {NOBET_URL}")
-        driver = webdriver.Chrome(options=chrome_options)
+        service = Service(ChromeDriverManager().install())
+        driver = webdriver.Chrome(service=service, options=chrome_options)
         driver.get(NOBET_URL)
         
         # Sayfanin yuklenmesini bekle
