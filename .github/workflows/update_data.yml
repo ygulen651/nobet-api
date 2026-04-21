@@ -2,9 +2,8 @@ name: Nöbetçi Eczane Otomatik Güncelleme
 
 on:
   schedule:
-    # Her gün Türkiye saatiyle gece 00:00 ve sabah 08:00'de otomatik çalışır
     - cron: '0 21,5 * * *' 
-  workflow_dispatch: # İstediğinde elle de başlatabilirsin
+  workflow_dispatch:
 
 jobs:
   update:
@@ -30,11 +29,12 @@ jobs:
       env:
         RENDER_API_URL: ${{ secrets.RENDER_API_URL }}
       run: python cloud_updater.py
+      continue-on-error: true # Hata olsa bile sonraki adımlara geç
 
-    - name: Değişiklikleri Kaydet (Otomatik)
+    - name: Değişiklikleri Kaydet
       run: |
         git config --local user.email "action@github.com"
         git config --local user.name "GitHub Action"
         git add .
-        git commit -m "Auto-update: $(date)" || echo "No changes to commit"
-        git push origin main || echo "No changes to push"
+        git commit -m "Auto-update: $(date)" || echo "Degisiklik yok"
+        git push origin main || echo "Push yapilamadi"
