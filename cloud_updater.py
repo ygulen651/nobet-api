@@ -59,6 +59,15 @@ def fetch_and_update():
         print("HATA: Veri hicbir yontemle alinamadi. Site engelliyor olabilir.")
         return False
 
+    # Yerel dosyayı kaydet (git commit için değişiklik oluşturur)
+    local_file = os.path.join(os.path.dirname(os.path.abspath(__file__)), "page_full.html")
+    try:
+        with open(local_file, 'w', encoding='utf-8') as f:
+            f.write(html_content)
+        print(f"Yerel dosya guncellendi: {local_file}")
+    except Exception as e:
+        print(f"Yerel dosya yazma hatasi: {e}")
+
     # Sunuculara Gönder
     success_any = False
     for api_url in TARGET_APIS:
