@@ -1,324 +1,421 @@
-<html lang="tr"><head></head><body>2026.08.29şimdiki saat: 2026-08-29 06:07:04
-
-    
+<html lang="en"><head>
         <meta charset="utf-8">
-        <title>50. Bölge Karaman Eczacı Odası - Nöbet Listesi</title>
-        <meta name="description" content="">
-        <meta name="title" content="">
-        <meta name="author" content="VatanSoft">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="icon" type="image/png" href="https://www.karamaneo.org.tr/themes/rainlab-vanilla/assets/images/logo.gif">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
-        <link rel="stylesheet" href="https://www.karamaneo.org.tr/themes/rainlab-vanilla/assets/css/jquery-ui.min.css">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-        <link rel="stylesheet" href="https://www.karamaneo.org.tr/plugins/martin/ssbuttons/assets/css/social-sharing-ssb.css">
-      
-        <link href="https://www.karamaneo.org.tr/combine/eb92a9de57fc0888fc64e46731ac0c70-1657099652" rel="stylesheet">
+        <title>Exception</title>
+        <link href="https://www.karamaneo.org.tr/modules/system/assets/css/styles.css" rel="stylesheet">
+        <script src="https://www.karamaneo.org.tr/modules/system/assets/vendor/syntaxhighlighter/scripts/shCore.js"></script>
+        <script src="https://www.karamaneo.org.tr/modules/system/assets/vendor/syntaxhighlighter/scripts/shBrushPhp.js"></script>
+        <script src="https://www.karamaneo.org.tr/modules/system/assets/vendor/syntaxhighlighter/scripts/shBrushXml.js"></script>
+        <link href="https://www.karamaneo.org.tr/modules/system/assets/vendor/syntaxhighlighter/styles/shCore.css">
+    </head>
+    <body>
+        <div class="container">
+
+            <h1><i class="icon-power-off warning"></i> Error</h1>
+
+            <p class="lead">We're sorry, but an unhandled error occurred. Please see the details below.</p>
+
+            <div class="exception-name-block">
+                <div>An exception has been thrown during the rendering of a template ("SQLSTATE[HY000]: General error: 2006 Server has gone away (SQL: select * from information_schema.tables where table_schema = karamaneoorg_karamane_eos and table_name = rainlab_translate_locales)").</div>
+                <p>/home/karamaneoorg/public_html/themes/rainlab-vanilla/layouts/standart_giris.htm <span>line</span> 65</p>
+            </div>
+
+            <ul class="indicators">
+                <li>
+                    <h3>Type</h3>
+                    <p>Twig Template</p>
+                </li>
+                <li>
+                    <h3>Exception</h3>
+                    <p>Cms\Classes\CmsException</p>
+                </li>
+            </ul>
+
+            <div><div id="highlighter_196834" class="syntaxhighlighter  htmlscript"><table border="0" cellpadding="0" cellspacing="0"><tbody><tr><td class="gutter"><div class="line number59 index0 alt2">59</div><div class="line number60 index1 alt1">60</div><div class="line number61 index2 alt2">61</div><div class="line number62 index3 alt1">62</div><div class="line number63 index4 alt2">63</div><div class="line number64 index5 alt1">64</div><div class="line number65 index6 alt2 highlighted">65</div><div class="line number66 index7 alt1">66</div><div class="line number67 index8 alt2">67</div><div class="line number68 index9 alt1">68</div><div class="line number69 index10 alt2">69</div><div class="line number70 index11 alt1">70</div><div class="line number71 index12 alt2">71</div></td><td class="code"><div class="container"><div class="line number59 index0 alt2"><code class="htmlscript spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="htmlscript plain">&lt;/</code><code class="htmlscript keyword">button</code><code class="htmlscript plain">&gt;</code></div><div class="line number60 index1 alt1"><code class="htmlscript spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="htmlscript plain">&lt;</code><code class="htmlscript keyword">a</code> <code class="htmlscript color1">class</code><code class="htmlscript plain">=</code><code class="htmlscript string">"navbar-brand"</code> <code class="htmlscript color1">href</code><code class="htmlscript plain">=</code><code class="htmlscript string">"{{ 'home'|page }}"</code><code class="htmlscript plain">&gt;Anasayfa&lt;/</code><code class="htmlscript keyword">a</code><code class="htmlscript plain">&gt;</code></div><div class="line number61 index2 alt2"><code class="htmlscript plain">&lt;/</code><code class="htmlscript keyword">div</code><code class="htmlscript plain">&gt;</code></div><div class="line number62 index3 alt1"><code class="htmlscript plain">&lt;</code><code class="htmlscript keyword">div</code> <code class="htmlscript color1">class</code><code class="htmlscript plain">=</code><code class="htmlscript string">"collapse navbar-collapse navbar-main-collapse"</code> <code class="htmlscript color1">style</code><code class="htmlscript plain">=</code><code class="htmlscript string">"max-height: 400px;"</code><code class="htmlscript plain">&gt;</code></div><div class="line number63 index4 alt2"><code class="htmlscript spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="htmlscript plain">&lt;</code><code class="htmlscript keyword">ul</code> <code class="htmlscript color1">class</code><code class="htmlscript plain">=</code><code class="htmlscript string">"nav navbar-nav"</code> <code class="htmlscript color1">style</code><code class="htmlscript plain">=</code><code class="htmlscript string">"float: revert;"</code><code class="htmlscript plain">&gt;</code></div><div class="line number64 index5 alt1"><code class="htmlscript spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="htmlscript plain">&lt;</code><code class="htmlscript keyword">li</code> <code class="htmlscript color1">class</code><code class="htmlscript plain">=</code><code class="htmlscript string">"{% if this.page.id == 'account' %}active{% endif %}"</code><code class="htmlscript plain">&gt;&lt;</code><code class="htmlscript keyword">a</code> <code class="htmlscript color1">href</code><code class="htmlscript plain">=</code><code class="htmlscript string">"{{ 'account'|page }}"</code><code class="htmlscript plain">&gt;Üye&lt;/</code><code class="htmlscript keyword">a</code><code class="htmlscript plain">&gt;&lt;/</code><code class="htmlscript keyword">li</code><code class="htmlscript plain">&gt;</code></div><div class="line number65 index6 alt2 highlighted"><code class="htmlscript spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="htmlscript plain">&lt;</code><code class="htmlscript keyword">li</code> <code class="htmlscript color1">class</code><code class="htmlscript plain">=</code><code class="htmlscript string">"{% if this.page.id == 'hakkimizda' %}active{% endif %}"</code><code class="htmlscript plain">&gt;&lt;</code><code class="htmlscript keyword">a</code> <code class="htmlscript color1">href</code><code class="htmlscript plain">=</code><code class="htmlscript string">"{{ 'hakkimizda'|staticPage }}"</code><code class="htmlscript plain">&gt;Hakkımızda&lt;/</code><code class="htmlscript keyword">a</code><code class="htmlscript plain">&gt;&lt;/</code><code class="htmlscript keyword">li</code><code class="htmlscript plain">&gt;</code></div><div class="line number66 index7 alt1"><code class="htmlscript spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="htmlscript plain">&lt;</code><code class="htmlscript keyword">li</code> <code class="htmlscript color1">class</code><code class="htmlscript plain">=</code><code class="htmlscript string">"{% if this.page.id == 'duyuru' %}active{% endif %}"</code><code class="htmlscript plain">&gt;&lt;</code><code class="htmlscript keyword">a</code> <code class="htmlscript color1">href</code><code class="htmlscript plain">=</code><code class="htmlscript string">"{{ 'duyuru'|page }}"</code><code class="htmlscript plain">&gt;Duyurular&lt;/</code><code class="htmlscript keyword">a</code><code class="htmlscript plain">&gt;&lt;/</code><code class="htmlscript keyword">li</code><code class="htmlscript plain">&gt;</code></div><div class="line number67 index8 alt2"><code class="htmlscript spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="htmlscript plain">&lt;</code><code class="htmlscript keyword">li</code> <code class="htmlscript color1">class</code><code class="htmlscript plain">=</code><code class="htmlscript string">"{% if this.page.id == 'tevzi' %}active{% endif %}"</code><code class="htmlscript plain">&gt;&lt;</code><code class="htmlscript keyword">a</code> <code class="htmlscript color1">href</code><code class="htmlscript plain">=</code><code class="htmlscript string">"<a href="https://karamaneo.org.tr/tevzi">https://karamaneo.org.tr/tevzi</a>"</code><code class="htmlscript plain">&gt;Tevzi&lt;/</code><code class="htmlscript keyword">a</code><code class="htmlscript plain">&gt;&lt;/</code><code class="htmlscript keyword">li</code><code class="htmlscript plain">&gt;</code></div><div class="line number68 index9 alt1"><code class="htmlscript spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="htmlscript plain">&lt;</code><code class="htmlscript keyword">li</code> <code class="htmlscript color1">class</code><code class="htmlscript plain">=</code><code class="htmlscript string">"{% if this.page.id == 'eczane-listesi' %}active{% endif %}"</code><code class="htmlscript plain">&gt;&lt;</code><code class="htmlscript keyword">a</code> <code class="htmlscript color1">href</code><code class="htmlscript plain">=</code><code class="htmlscript string">"{{ 'eczane-listesi'|page }}"</code><code class="htmlscript plain">&gt;Eczane Listesi&lt;/</code><code class="htmlscript keyword">a</code><code class="htmlscript plain">&gt;&lt;/</code><code class="htmlscript keyword">li</code><code class="htmlscript plain">&gt;</code></div><div class="line number69 index10 alt2"><code class="htmlscript spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="htmlscript plain">&lt;</code><code class="htmlscript keyword">li</code> <code class="htmlscript color1">class</code><code class="htmlscript plain">=</code><code class="htmlscript string">"{% if this.page.id == 'nobet-listesi' %}active{% endif %}"</code><code class="htmlscript plain">&gt;&lt;</code><code class="htmlscript keyword">a</code> <code class="htmlscript color1">href</code><code class="htmlscript plain">=</code><code class="htmlscript string">"{{ 'nobet-listesi'|page }}"</code><code class="htmlscript plain">&gt;Nöbetçi Eczane&lt;/</code><code class="htmlscript keyword">a</code><code class="htmlscript plain">&gt;&lt;/</code><code class="htmlscript keyword">li</code><code class="htmlscript plain">&gt;</code></div><div class="line number70 index11 alt1"><code class="htmlscript spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="htmlscript plain">&lt;</code><code class="htmlscript keyword">li</code> <code class="htmlscript color1">class</code><code class="htmlscript plain">=</code><code class="htmlscript string">"{% if this.page.id == 'nobet-karti-yazdir' %}active{% endif %}"</code><code class="htmlscript plain">&gt;&lt;</code><code class="htmlscript keyword">a</code> <code class="htmlscript color1">href</code><code class="htmlscript plain">=</code><code class="htmlscript string">"{{ 'nobet-karti-2'|page }}"</code><code class="htmlscript plain">&gt;Nöbet Kartı Yazdır&lt;/</code><code class="htmlscript keyword">a</code><code class="htmlscript plain">&gt;&lt;/</code><code class="htmlscript keyword">li</code><code class="htmlscript plain">&gt;</code></div><div class="line number71 index12 alt2"><code class="htmlscript spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="htmlscript plain">&lt;</code><code class="htmlscript keyword">li</code> <code class="htmlscript color1">class</code><code class="htmlscript plain">=</code><code class="htmlscript string">"{% if this.page.id == 'iletisim' %}active{% endif %}"</code><code class="htmlscript plain">&gt;&lt;</code><code class="htmlscript keyword">a</code> <code class="htmlscript color1">href</code><code class="htmlscript plain">=</code><code class="htmlscript string">"{{ 'iletisim'|page }}"</code><code class="htmlscript plain">&gt;İletişim&lt;/</code><code class="htmlscript keyword">a</code><code class="htmlscript plain">&gt;&lt;/</code><code class="htmlscript keyword">li</code><code class="htmlscript plain">&gt;</code></div></div></td></tr></tbody></table></div></div>
+
+            <h3><i class="icon-code-fork warning"></i> Stack trace</h3>
+
+            <table class="data-table">
+                <thead>
+                    <tr>
+                        <th class="right">#</th>
+                        <th>Called Code</th>
+                        <th>Document</th>
+                        <th class="right">Line</th>
+                    </tr>
+                </thead>
+                <tbody>
+                                            <tr>
+                            <td class="right">45</td>
+                            <td>
+                                Twig\Template-&gt;displayWithErrorHandling(<abbr title="array(6) [this =&gt; array(7), errors =&gt; object(Illuminate\Support\ViewErrorBag), session =&gt; object(RainLab\User\Components\Session), ssbuttonsssb =&gt; object(Martin\SSButtons\Components\SSButtonsSSB), user =&gt; null, type =&gt; 'png'], array(0)">…</abbr>)
+                            </td>
+                            <td>~/vendor/twig/twig/src/Template.php</td>
+                            <td class="right">378</td>
+                        </tr>
+                                            <tr>
+                            <td class="right">44</td>
+                            <td>
+                                Twig\Template-&gt;display(<abbr title="array(6) [this =&gt; array(7), errors =&gt; object(Illuminate\Support\ViewErrorBag), session =&gt; object(RainLab\User\Components\Session), ssbuttonsssb =&gt; object(Martin\SSButtons\Components\SSButtonsSSB), user =&gt; null, type =&gt; 'png']">…</abbr>)
+                            </td>
+                            <td>~/vendor/twig/twig/src/Template.php</td>
+                            <td class="right">390</td>
+                        </tr>
+                                            <tr>
+                            <td class="right">43</td>
+                            <td>
+                                Twig\Template-&gt;render(<abbr title="array(6) [this =&gt; array(7), errors =&gt; object(Illuminate\Support\ViewErrorBag), session =&gt; object(RainLab\User\Components\Session), ssbuttonsssb =&gt; object(Martin\SSButtons\Components\SSButtonsSSB), user =&gt; null, type =&gt; 'png']">…</abbr>)
+                            </td>
+                            <td>~/modules/cms/classes/Controller.php</td>
+                            <td class="right">435</td>
+                        </tr>
+                                            <tr>
+                            <td class="right">42</td>
+                            <td>
+                                Cms\Classes\Controller-&gt;runPage(<abbr title="object(Cms\Classes\Page)">…</abbr>)
+                            </td>
+                            <td>~/modules/cms/classes/Controller.php</td>
+                            <td class="right">225</td>
+                        </tr>
+                                            <tr>
+                            <td class="right">41</td>
+                            <td>
+                                Cms\Classes\Controller-&gt;run(<abbr title="'nobet-listesi'">…</abbr>)
+                            </td>
+                            <td>~/modules/cms/classes/CmsController.php</td>
+                            <td class="right">50</td>
+                        </tr>
+                                            <tr>
+                            <td class="right">40</td>
+                            <td>
+                                Cms\Classes\CmsController-&gt;run(<abbr title="'nobet-listesi'">…</abbr>)
+                            </td>
+                            <td></td>
+                            <td class="right"></td>
+                        </tr>
+                                            <tr>
+                            <td class="right">39</td>
+                            <td>
+                                call_user_func_array(<abbr title="array(2) [0 =&gt; object(Cms\Classes\CmsController), 1 =&gt; 'run'], array(1) [slug =&gt; 'nobet-listesi']">…</abbr>)
+                            </td>
+                            <td>~/vendor/laravel/framework/src/Illuminate/Routing/Controller.php</td>
+                            <td class="right">54</td>
+                        </tr>
+                                            <tr>
+                            <td class="right">38</td>
+                            <td>
+                                Illuminate\Routing\Controller-&gt;callAction(<abbr title="'run', array(1) [slug =&gt; 'nobet-listesi']">…</abbr>)
+                            </td>
+                            <td>~/vendor/laravel/framework/src/Illuminate/Routing/ControllerDispatcher.php</td>
+                            <td class="right">45</td>
+                        </tr>
+                                            <tr>
+                            <td class="right">37</td>
+                            <td>
+                                Illuminate\Routing\ControllerDispatcher-&gt;dispatch(<abbr title="object(Illuminate\Routing\Route), object(Cms\Classes\CmsController), 'run'">…</abbr>)
+                            </td>
+                            <td>~/vendor/laravel/framework/src/Illuminate/Routing/Route.php</td>
+                            <td class="right">212</td>
+                        </tr>
+                                            <tr>
+                            <td class="right">36</td>
+                            <td>
+                                Illuminate\Routing\Route-&gt;runController()
+                            </td>
+                            <td>~/vendor/laravel/framework/src/Illuminate/Routing/Route.php</td>
+                            <td class="right">169</td>
+                        </tr>
+                                            <tr>
+                            <td class="right">35</td>
+                            <td>
+                                Illuminate\Routing\Route-&gt;run()
+                            </td>
+                            <td>~/vendor/laravel/framework/src/Illuminate/Routing/Router.php</td>
+                            <td class="right">658</td>
+                        </tr>
+                                            <tr>
+                            <td class="right">34</td>
+                            <td>
+                                Illuminate\Routing\Router-&gt;Illuminate\Routing\{closure}(<abbr title="object(Illuminate\Http\Request)">…</abbr>)
+                            </td>
+                            <td>~/vendor/laravel/framework/src/Illuminate/Routing/Pipeline.php</td>
+                            <td class="right">30</td>
+                        </tr>
+                                            <tr>
+                            <td class="right">33</td>
+                            <td>
+                                Illuminate\Routing\Pipeline-&gt;Illuminate\Routing\{closure}(<abbr title="object(Illuminate\Http\Request)">…</abbr>)
+                            </td>
+                            <td>~/vendor/laravel/framework/src/Illuminate/Routing/Middleware/SubstituteBindings.php</td>
+                            <td class="right">41</td>
+                        </tr>
+                                            <tr>
+                            <td class="right">32</td>
+                            <td>
+                                Illuminate\Routing\Middleware\SubstituteBindings-&gt;handle(<abbr title="object(Illuminate\Http\Request), object(Closure)">…</abbr>)
+                            </td>
+                            <td>~/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php</td>
+                            <td class="right">149</td>
+                        </tr>
+                                            <tr>
+                            <td class="right">31</td>
+                            <td>
+                                Illuminate\Pipeline\Pipeline-&gt;Illuminate\Pipeline\{closure}(<abbr title="object(Illuminate\Http\Request)">…</abbr>)
+                            </td>
+                            <td>~/vendor/laravel/framework/src/Illuminate/Routing/Pipeline.php</td>
+                            <td class="right">53</td>
+                        </tr>
+                                            <tr>
+                            <td class="right">30</td>
+                            <td>
+                                Illuminate\Routing\Pipeline-&gt;Illuminate\Routing\{closure}(<abbr title="object(Illuminate\Http\Request)">…</abbr>)
+                            </td>
+                            <td>~/vendor/laravel/framework/src/Illuminate/View/Middleware/ShareErrorsFromSession.php</td>
+                            <td class="right">49</td>
+                        </tr>
+                                            <tr>
+                            <td class="right">29</td>
+                            <td>
+                                Illuminate\View\Middleware\ShareErrorsFromSession-&gt;handle(<abbr title="object(Illuminate\Http\Request), object(Closure)">…</abbr>)
+                            </td>
+                            <td>~/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php</td>
+                            <td class="right">149</td>
+                        </tr>
+                                            <tr>
+                            <td class="right">28</td>
+                            <td>
+                                Illuminate\Pipeline\Pipeline-&gt;Illuminate\Pipeline\{closure}(<abbr title="object(Illuminate\Http\Request)">…</abbr>)
+                            </td>
+                            <td>~/vendor/laravel/framework/src/Illuminate/Routing/Pipeline.php</td>
+                            <td class="right">53</td>
+                        </tr>
+                                            <tr>
+                            <td class="right">27</td>
+                            <td>
+                                Illuminate\Routing\Pipeline-&gt;Illuminate\Routing\{closure}(<abbr title="object(Illuminate\Http\Request)">…</abbr>)
+                            </td>
+                            <td>~/vendor/laravel/framework/src/Illuminate/Session/Middleware/StartSession.php</td>
+                            <td class="right">63</td>
+                        </tr>
+                                            <tr>
+                            <td class="right">26</td>
+                            <td>
+                                Illuminate\Session\Middleware\StartSession-&gt;handle(<abbr title="object(Illuminate\Http\Request), object(Closure)">…</abbr>)
+                            </td>
+                            <td>~/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php</td>
+                            <td class="right">149</td>
+                        </tr>
+                                            <tr>
+                            <td class="right">25</td>
+                            <td>
+                                Illuminate\Pipeline\Pipeline-&gt;Illuminate\Pipeline\{closure}(<abbr title="object(Illuminate\Http\Request)">…</abbr>)
+                            </td>
+                            <td>~/vendor/laravel/framework/src/Illuminate/Routing/Pipeline.php</td>
+                            <td class="right">53</td>
+                        </tr>
+                                            <tr>
+                            <td class="right">24</td>
+                            <td>
+                                Illuminate\Routing\Pipeline-&gt;Illuminate\Routing\{closure}(<abbr title="object(Illuminate\Http\Request)">…</abbr>)
+                            </td>
+                            <td>~/vendor/laravel/framework/src/Illuminate/Cookie/Middleware/AddQueuedCookiesToResponse.php</td>
+                            <td class="right">37</td>
+                        </tr>
+                                            <tr>
+                            <td class="right">23</td>
+                            <td>
+                                Illuminate\Cookie\Middleware\AddQueuedCookiesToResponse-&gt;handle(<abbr title="object(Illuminate\Http\Request), object(Closure)">…</abbr>)
+                            </td>
+                            <td>~/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php</td>
+                            <td class="right">149</td>
+                        </tr>
+                                            <tr>
+                            <td class="right">22</td>
+                            <td>
+                                Illuminate\Pipeline\Pipeline-&gt;Illuminate\Pipeline\{closure}(<abbr title="object(Illuminate\Http\Request)">…</abbr>)
+                            </td>
+                            <td>~/vendor/laravel/framework/src/Illuminate/Routing/Pipeline.php</td>
+                            <td class="right">53</td>
+                        </tr>
+                                            <tr>
+                            <td class="right">21</td>
+                            <td>
+                                Illuminate\Routing\Pipeline-&gt;Illuminate\Routing\{closure}(<abbr title="object(Illuminate\Http\Request)">…</abbr>)
+                            </td>
+                            <td>~/vendor/laravel/framework/src/Illuminate/Cookie/Middleware/EncryptCookies.php</td>
+                            <td class="right">68</td>
+                        </tr>
+                                            <tr>
+                            <td class="right">20</td>
+                            <td>
+                                Illuminate\Cookie\Middleware\EncryptCookies-&gt;handle(<abbr title="object(Illuminate\Http\Request), object(Closure)">…</abbr>)
+                            </td>
+                            <td>~/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php</td>
+                            <td class="right">149</td>
+                        </tr>
+                                            <tr>
+                            <td class="right">19</td>
+                            <td>
+                                Illuminate\Pipeline\Pipeline-&gt;Illuminate\Pipeline\{closure}(<abbr title="object(Illuminate\Http\Request)">…</abbr>)
+                            </td>
+                            <td>~/vendor/laravel/framework/src/Illuminate/Routing/Pipeline.php</td>
+                            <td class="right">53</td>
+                        </tr>
+                                            <tr>
+                            <td class="right">18</td>
+                            <td>
+                                Illuminate\Routing\Pipeline-&gt;Illuminate\Routing\{closure}(<abbr title="object(Illuminate\Http\Request)">…</abbr>)
+                            </td>
+                            <td>~/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php</td>
+                            <td class="right">102</td>
+                        </tr>
+                                            <tr>
+                            <td class="right">17</td>
+                            <td>
+                                Illuminate\Pipeline\Pipeline-&gt;then(<abbr title="object(Closure)">…</abbr>)
+                            </td>
+                            <td>~/vendor/laravel/framework/src/Illuminate/Routing/Router.php</td>
+                            <td class="right">660</td>
+                        </tr>
+                                            <tr>
+                            <td class="right">16</td>
+                            <td>
+                                Illuminate\Routing\Router-&gt;runRouteWithinStack(<abbr title="object(Illuminate\Routing\Route), object(Illuminate\Http\Request)">…</abbr>)
+                            </td>
+                            <td>~/vendor/laravel/framework/src/Illuminate/Routing/Router.php</td>
+                            <td class="right">635</td>
+                        </tr>
+                                            <tr>
+                            <td class="right">15</td>
+                            <td>
+                                Illuminate\Routing\Router-&gt;runRoute(<abbr title="object(Illuminate\Http\Request), object(Illuminate\Routing\Route)">…</abbr>)
+                            </td>
+                            <td>~/vendor/laravel/framework/src/Illuminate/Routing/Router.php</td>
+                            <td class="right">601</td>
+                        </tr>
+                                            <tr>
+                            <td class="right">14</td>
+                            <td>
+                                Illuminate\Routing\Router-&gt;dispatchToRoute(<abbr title="object(Illuminate\Http\Request)">…</abbr>)
+                            </td>
+                            <td>~/vendor/october/rain/src/Router/CoreRouter.php</td>
+                            <td class="right">20</td>
+                        </tr>
+                                            <tr>
+                            <td class="right">13</td>
+                            <td>
+                                October\Rain\Router\CoreRouter-&gt;dispatch(<abbr title="object(Illuminate\Http\Request)">…</abbr>)
+                            </td>
+                            <td>~/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php</td>
+                            <td class="right">176</td>
+                        </tr>
+                                            <tr>
+                            <td class="right">12</td>
+                            <td>
+                                Illuminate\Foundation\Http\Kernel-&gt;Illuminate\Foundation\Http\{closure}(<abbr title="object(Illuminate\Http\Request)">…</abbr>)
+                            </td>
+                            <td>~/vendor/laravel/framework/src/Illuminate/Routing/Pipeline.php</td>
+                            <td class="right">30</td>
+                        </tr>
+                                            <tr>
+                            <td class="right">11</td>
+                            <td>
+                                Illuminate\Routing\Pipeline-&gt;Illuminate\Routing\{closure}(<abbr title="object(Illuminate\Http\Request)">…</abbr>)
+                            </td>
+                            <td>~/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/CheckForMaintenanceMode.php</td>
+                            <td class="right">46</td>
+                        </tr>
+                                            <tr>
+                            <td class="right">10</td>
+                            <td>
+                                Illuminate\Foundation\Http\Middleware\CheckForMaintenanceMode-&gt;handle(<abbr title="object(Illuminate\Http\Request), object(Closure)">…</abbr>)
+                            </td>
+                            <td>~/vendor/october/rain/src/Foundation/Http/Middleware/CheckForMaintenanceMode.php</td>
+                            <td class="right">25</td>
+                        </tr>
+                                            <tr>
+                            <td class="right">9</td>
+                            <td>
+                                October\Rain\Foundation\Http\Middleware\CheckForMaintenanceMode-&gt;handle(<abbr title="object(Illuminate\Http\Request), object(Closure)">…</abbr>)
+                            </td>
+                            <td>~/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php</td>
+                            <td class="right">149</td>
+                        </tr>
+                                            <tr>
+                            <td class="right">8</td>
+                            <td>
+                                Illuminate\Pipeline\Pipeline-&gt;Illuminate\Pipeline\{closure}(<abbr title="object(Illuminate\Http\Request)">…</abbr>)
+                            </td>
+                            <td>~/vendor/laravel/framework/src/Illuminate/Routing/Pipeline.php</td>
+                            <td class="right">53</td>
+                        </tr>
+                                            <tr>
+                            <td class="right">7</td>
+                            <td>
+                                Illuminate\Routing\Pipeline-&gt;Illuminate\Routing\{closure}(<abbr title="object(Illuminate\Http\Request)">…</abbr>)
+                            </td>
+                            <td>~/vendor/october/rain/src/Http/Middleware/TrustHosts.php</td>
+                            <td class="right">46</td>
+                        </tr>
+                                            <tr>
+                            <td class="right">6</td>
+                            <td>
+                                October\Rain\Http\Middleware\TrustHosts-&gt;handle(<abbr title="object(Illuminate\Http\Request), object(Closure)">…</abbr>)
+                            </td>
+                            <td>~/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php</td>
+                            <td class="right">149</td>
+                        </tr>
+                                            <tr>
+                            <td class="right">5</td>
+                            <td>
+                                Illuminate\Pipeline\Pipeline-&gt;Illuminate\Pipeline\{closure}(<abbr title="object(Illuminate\Http\Request)">…</abbr>)
+                            </td>
+                            <td>~/vendor/laravel/framework/src/Illuminate/Routing/Pipeline.php</td>
+                            <td class="right">53</td>
+                        </tr>
+                                            <tr>
+                            <td class="right">4</td>
+                            <td>
+                                Illuminate\Routing\Pipeline-&gt;Illuminate\Routing\{closure}(<abbr title="object(Illuminate\Http\Request)">…</abbr>)
+                            </td>
+                            <td>~/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php</td>
+                            <td class="right">102</td>
+                        </tr>
+                                            <tr>
+                            <td class="right">3</td>
+                            <td>
+                                Illuminate\Pipeline\Pipeline-&gt;then(<abbr title="object(Closure)">…</abbr>)
+                            </td>
+                            <td>~/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php</td>
+                            <td class="right">151</td>
+                        </tr>
+                                            <tr>
+                            <td class="right">2</td>
+                            <td>
+                                Illuminate\Foundation\Http\Kernel-&gt;sendRequestThroughRouter(<abbr title="object(Illuminate\Http\Request)">…</abbr>)
+                            </td>
+                            <td>~/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php</td>
+                            <td class="right">116</td>
+                        </tr>
+                                            <tr>
+                            <td class="right">1</td>
+                            <td>
+                                Illuminate\Foundation\Http\Kernel-&gt;handle(<abbr title="object(Illuminate\Http\Request)">…</abbr>)
+                            </td>
+                            <td>~/index.php</td>
+                            <td class="right">43</td>
+                        </tr>
+                                    </tbody>
+            </table>
+        </div>
+
         <script>
-        function myFunction() {
-            // Declare variables
-            var input, filter, ul, li, a, i;
-            input = document.getElementById('myInput');
-            filter = input.value.toUpperCase();
-            ul = document.getElementById("myUL");
-            li = ul.getElementsByTagName('li');
-        
-            // Loop through all list items, and hide those who don't match the search query
-            for (i = 0; i < li.length; i++) {
-                a = li[i].getElementsByTagName("a")[0];
-                if (a.innerHTML.toUpperCase().indexOf(filter) > -1) {
-                    li[i].style.display = "";
-                } else {
-                    li[i].style.display = "none";
-                }
-            }
-        }
+            SyntaxHighlighter.defaults['toolbar'] = false;
+            SyntaxHighlighter.defaults['quick-code'] = false;
+            SyntaxHighlighter.defaults['html-script'] = true;
+            SyntaxHighlighter.defaults['first-line'] = 59;
+            SyntaxHighlighter.defaults['highlight'] = 65;
+            SyntaxHighlighter.all()
         </script>
     
-    
-    <div id="loading" style="display: none;">
-      <img id="loading-image" src="http://www.karamaneo.org.tr/themes/rainlab-vanilla/assets/images/loading.gif" alt="Lütfen Bekleyiniz...">
-    </div>
-        <!-- Header -->
-        <header id="layout-header">
 
-            <!-- Nav -->
-            <nav id="layout-nav" class="navbar navbar-default navbar-fixed-top" role="navigation">
-                <div class="container">
-                    <div class="navbar-header">
-                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-main-collapse">
-                            <span class="sr-only">Toggle navigation</span>
-                            <span class="icon-bar"></span>
-                            <span class="icon-bar"></span>
-                            <span class="icon-bar"></span>
-                        </button>
-                        <a class="navbar-brand" href="https://www.karamaneo.org.tr">Anasayfa</a>
-                    </div>
-                    <div class="collapse navbar-collapse navbar-main-collapse" style="max-height: 400px;">
-                        <ul class="nav navbar-nav" style="float: revert;">
-                            <li class=""><a href="https://www.karamaneo.org.tr/account">Üye</a></li>
-                            <li class=""><a href="https://www.karamaneo.org.tr/hakkimizda">Hakkımızda</a></li>
-                            <li class=""><a href="https://www.karamaneo.org.tr/duyuru">Duyurular</a></li>
-                            <li class=""><a href="https://karamaneo.org.tr/tevzi">Tevzi</a></li>
-                            <li class=""><a href="https://www.karamaneo.org.tr/eczane-listesi">Eczane Listesi</a></li>
-                            <li class="active"><a href="https://www.karamaneo.org.tr/nobet-listesi">Nöbetçi Eczane</a></li>
-                            <li class=""><a href="https://www.karamaneo.org.tr/nobet-karti-2">Nöbet Kartı Yazdır</a></li>
-                            <li class=""><a href="https://www.karamaneo.org.tr/iletisim">İletişim</a></li>
-                                                    </ul>
-                        <!--
-                        <ul class="nav navbar-nav navbar-right">
-                            
-                        </ul>
-                        -->
-                    </div>
-                </div>
-            </nav>
-
-        </header>
-
-        
-        <!-- Content -->
-        <section id="layout-content">
-            <div class="jumbotron" style="background-image:url(https://www.karamaneo.org.tr/themes/rainlab-vanilla/assets/images/HomeBanner2.jpg);background-repeat: no-repeat;background-position: center;background-size: 100% 100%;">
-                <div class="container">
-                    <!--<h1>Nöbet Listesi</h1>
-                    <p></p>-->
-                    <center><img src="https://www.karamaneo.org.tr/themes/rainlab-vanilla/assets/images/ust.png" style="max-width:100%"></center>
-                </div>
-            </div>
-            <div class="container">
-                <div class="row">
-    <div class="col-sm-12 col-md-12">
-        
-        <div class="col-sm-12 col-md-6" style="padding-right: 35px;padding-left: 15px;">
-            <h2 class="vatan_hl"><span class="vatan_span">Merkez Nöbetçi Eczaneler <br>29-08-2026</span></h2>
-            <!--
-    <h4>DUYGU</h4>
-    0338 212 13 49 - Özel Karaman Tıp Merkezi Karşısı Tahsin Ünal Mh. Şamkapı Cd. No:51 KARAMAN 
-    <h4>KOZA </h4>
-    0338 213 30 13 - 6 Nolu Sağlık Ocağı Yanı Fatih Anadolu Lisesi Karşısı Karamanoğlu Mehmetbey Mah. 157. Sok. No:6-B/C KARAMAN
--->
-
-
-<!--<ul class="record-list">-->
-                <!--<li>-->
-                        <div class="row" style="margin-bottom:10px;background-color: antiquewhite;border-radius: 10px;box-shadow: 5px 5px 5px #888888;">
-        <div class="col-xs-2 col-sm-3" style="padding-left: 10px;padding-right: 5px;">
-            <img class="e_flip animated" src="https://www.karamaneo.org.tr/themes/rainlab-vanilla/assets/images/epano.gif" style="max-width: 100%;height: auto;margin-bottom:10px;margin-top: 10px;">
-        </div>
-        <div class="col-xs-10 col-sm-9" style="vertical-align:top;">
-            <h4><i class="icon-arrow-right"></i>DUYGU  </h4><!--
-                                    <i class="icon-map-marker"></i><strong> Sabah 08:00'a Kadar </strong><br>
-                 
-                --><i class="icon-map-marker"></i><strong> 29/08/2026 08:00'e kadar </strong><br><p><i class="icon-home"></i> Özel Karaman Tıp Merkezi Karşısı Tahsin Ünal Mh. Şamkapı Cd. No:51 KARAMAN  <br><i class="icon-phone"></i>
-                                0338 212 13 49
-                
-                - <i class="icon-map-marker"></i><a href="https://maps.google.com/?ll=37.181660,33.219701&amp;q=37.181660,33.219701" target="_blank"><b> HARİTA</b></a></p>            </div>
-        </div>
-        <!--</li>-->
-                        <!--<li>-->
-                        <div class="row" style="margin-bottom:10px;background-color: antiquewhite;border-radius: 10px;box-shadow: 5px 5px 5px #888888;">
-        <div class="col-xs-2 col-sm-3" style="padding-left: 10px;padding-right: 5px;">
-            <img class="e_flip animated" src="https://www.karamaneo.org.tr/themes/rainlab-vanilla/assets/images/epano.gif" style="max-width: 100%;height: auto;margin-bottom:10px;margin-top: 10px;">
-        </div>
-        <div class="col-xs-10 col-sm-9" style="vertical-align:top;">
-            <h4><i class="icon-arrow-right"></i>KOZA   </h4><!--
-                 
-                    <i class="icon-map-marker"></i><strong> Gece 12:00'ye Kadar </strong><br>
-                 
-                --><i class="icon-map-marker"></i><strong> 28/08/2026 23:59'e kadar </strong><br><p><i class="icon-home"></i> 6 Nolu Sağlık Ocağı Yanı Fatih Anadolu Lisesi Karşısı Karamanoğlu Mehmetbey Mah. 157. Sok. No:6-B/C KARAMAN <br><i class="icon-phone"></i>
-                                0338 213 30 13
-                
-                - <i class="icon-map-marker"></i><a href="https://maps.google.com/?ll=37.173276,33.217083&amp;q=37.173276,33.217083" target="_blank"><b> HARİTA</b></a></p>            </div>
-        </div>
-        <!--</li>-->
-            
-<!--</ul>-->            
-        </div>
-        <div class="col-sm-12 col-md-6" style="padding-right: 35px;padding-left: 15px;">
-            <h2 class="vatan_hl"><span class="vatan_span">Ermenek Nöbetçi Eczaneler <br>29-08-2026</span></h2>
-            <!--
-    <h4>ERMENEK</h4>
-    0338 716 15 50 - TAŞBAŞI MAH.HÜKÜMET CD. UGUR PASAJI NO:95/B ERMENEK/KARAMAN
--->
-
-
-<!--<ul class="record-list">-->
-                <!--<li>-->
-                        <div class="row" style="margin-bottom:10px;background-color: antiquewhite;border-radius: 10px;box-shadow: 5px 5px 5px #888888;">
-        <div class="col-xs-2 col-sm-3" style="padding-left: 10px;padding-right: 5px;">
-            <img class="e_flip animated" src="https://www.karamaneo.org.tr/themes/rainlab-vanilla/assets/images/epano.gif" style="max-width: 100%;height: auto;margin-bottom:10px;margin-top: 10px;">
-        </div>
-        <div class="col-xs-10 col-sm-9" style="vertical-align:top;">
-            <h4><i class="icon-arrow-right"></i>ERMENEK  </h4><!--
-                                    <i class="icon-map-marker"></i><strong> Sabah 08:00'a Kadar </strong><br>
-                 
-                --><i class="icon-map-marker"></i><strong> 30/08/2026 08:00'e kadar </strong><br><p><i class="icon-home"></i> TAŞBAŞI MAH.HÜKÜMET CD. UGUR PASAJI NO:95/B ERMENEK/KARAMAN <br><i class="icon-phone"></i> 0338 716 15 50 - <i class="icon-map-marker"></i><a href="https://maps.google.com/?ll=36.639310,32.889528&amp;q=36.639310,32.889528" target="_blank"><b> HARİTA</b></a></p>            </div>
-        </div>
-        <!--</li>-->
-            
-<!--</ul>-->        </div>
-        <div class="col-sm-12 col-md-6" style="padding-right: 35px;padding-left: 15px;">
-            <h2 class="vatan_hl"><span class="vatan_span">Ayrancı Nöbetçi Eczaneler <br>29-08-2026</span></h2>
-            <!--
-    <h4>BASAK</h4>
-    3384112838 - DEDE MAH.ATATÜRK CAD.NO:42 AYRANCI/KARAMAN
--->
-
-
-<!--<ul class="record-list">-->
-                <!--<li>-->
-                        <div class="row" style="margin-bottom:10px;background-color: antiquewhite;border-radius: 10px;box-shadow: 5px 5px 5px #888888;">
-        <div class="col-xs-2 col-sm-3" style="padding-left: 10px;padding-right: 5px;">
-            <img class="e_flip animated" src="https://www.karamaneo.org.tr/themes/rainlab-vanilla/assets/images/epano.gif" style="max-width: 100%;height: auto;margin-bottom:10px;margin-top: 10px;">
-        </div>
-        <div class="col-xs-10 col-sm-9" style="vertical-align:top;">
-            <h4><i class="icon-arrow-right"></i>BASAK  </h4><!--
-                                    <i class="icon-map-marker"></i><strong> Sabah 08:00'a Kadar </strong><br>
-                 
-                --><i class="icon-map-marker"></i><strong> 30/08/2026 08:00'e kadar </strong><br><p><i class="icon-home"></i> DEDE MAH.ATATÜRK CAD.NO:42 AYRANCI/KARAMAN <br><i class="icon-phone"></i> 3384112838 - <i class="icon-map-marker"></i><a href="https://maps.google.com/?ll=37.362217,33.689967&amp;q=37.362217,33.689967" target="_blank"><b> HARİTA</b></a></p>            </div>
-        </div>
-        <!--</li>-->
-            
-<!--</ul>-->        </div>
-        <div class="col-sm-12 col-md-6" style="padding-right: 35px;padding-left: 15px;">
-            <h2 class="vatan_hl"><span class="vatan_span">Kazımkarabekir Nöbetçi Eczaneler <br>29-08-2026</span></h2>
-            <!--
-    <h4>KASABA</h4>
-    0338 311 25 00 - KAZIMKARABEKİR İLÇESİ PAZAR MAH. KAZIMKARABEKİR CAD. NO:3 
--->
-
-
-<!--<ul class="record-list">-->
-                <!--<li>-->
-                        <div class="row" style="margin-bottom:10px;background-color: antiquewhite;border-radius: 10px;box-shadow: 5px 5px 5px #888888;">
-        <div class="col-xs-2 col-sm-3" style="padding-left: 10px;padding-right: 5px;">
-            <img class="e_flip animated" src="https://www.karamaneo.org.tr/themes/rainlab-vanilla/assets/images/epano.gif" style="max-width: 100%;height: auto;margin-bottom:10px;margin-top: 10px;">
-        </div>
-        <div class="col-xs-10 col-sm-9" style="vertical-align:top;">
-            <h4><i class="icon-arrow-right"></i>KASABA  </h4><!--
-                                    <i class="icon-map-marker"></i><strong> Sabah 08:00'a Kadar </strong><br>
-                 
-                --><i class="icon-map-marker"></i><strong> 30/08/2026 08:00'e kadar </strong><br><p><i class="icon-home"></i> KAZIMKARABEKİR İLÇESİ PAZAR MAH. KAZIMKARABEKİR CAD. NO:3  <br><i class="icon-phone"></i> 0338 311 25 00 - <i class="icon-map-marker"></i><a href="https://maps.google.com/?ll=37.226867,32.959779&amp;q=37.226867,32.959779" target="_blank"><b> HARİTA</b></a></p>            </div>
-        </div>
-        <!--</li>-->
-            
-<!--</ul>-->        </div>
-        <div class="col-sm-12 col-md-6" style="padding-right: 35px;padding-left: 15px;">
-            <h2 class="vatan_hl"><span class="vatan_span">Başyayla Nöbetçi Eczaneler <br>29-08-2026</span></h2>
-            <!--
-    <h4>KİRAZ</h4>
-    0338 351 61 80 - ŞİRİNDERE MAH. CUMHURİYET CAD. NO:149/B BAŞYAYLA  / KARAMAN
--->
-
-
-<!--<ul class="record-list">-->
-                <!--<li>-->
-                        <div class="row" style="margin-bottom:10px;background-color: antiquewhite;border-radius: 10px;box-shadow: 5px 5px 5px #888888;">
-        <div class="col-xs-2 col-sm-3" style="padding-left: 10px;padding-right: 5px;">
-            <img class="e_flip animated" src="https://www.karamaneo.org.tr/themes/rainlab-vanilla/assets/images/epano.gif" style="max-width: 100%;height: auto;margin-bottom:10px;margin-top: 10px;">
-        </div>
-        <div class="col-xs-10 col-sm-9" style="vertical-align:top;">
-            <h4><i class="icon-arrow-right"></i>KİRAZ  </h4><!--
-                 
-                    <i class="icon-map-marker"></i><strong> Gece 12:00'ye Kadar </strong><br>
-                 
-                --><i class="icon-map-marker"></i><strong> 29/08/2026 18:00'e kadar </strong><br><p><i class="icon-home"></i> ŞİRİNDERE MAH. CUMHURİYET CAD. NO:149/B BAŞYAYLA  / KARAMAN <br><i class="icon-phone"></i> 0338 351 61 80 - <i class="icon-map-marker"></i><a href="https://maps.google.com/?ll=36.751221,32.682429&amp;q=36.751221,32.682429" target="_blank"><b> HARİTA</b></a></p>            </div>
-        </div>
-        <!--</li>-->
-            
-<!--</ul>-->        </div>
-        <div class="col-sm-12 col-md-6" style="padding-right: 35px;padding-left: 15px;">
-            <h2 class="vatan_hl"><span class="vatan_span">Sarıveliler Nöbetçi Eczaneler <br>29-08-2026</span></h2>
-            <!--
-    <h4>TALAY</h4>
-    0338 441 25 13 - KÜÇÜKKARAPINAR MAH. IMAMHATIP SOK.NO:5/ZA SARIVELILER/KARAMAN
--->
-
-
-<!--<ul class="record-list">-->
-                <!--<li>-->
-                        <div class="row" style="margin-bottom:10px;background-color: antiquewhite;border-radius: 10px;box-shadow: 5px 5px 5px #888888;">
-        <div class="col-xs-2 col-sm-3" style="padding-left: 10px;padding-right: 5px;">
-            <img class="e_flip animated" src="https://www.karamaneo.org.tr/themes/rainlab-vanilla/assets/images/epano.gif" style="max-width: 100%;height: auto;margin-bottom:10px;margin-top: 10px;">
-        </div>
-        <div class="col-xs-10 col-sm-9" style="vertical-align:top;">
-            <h4><i class="icon-arrow-right"></i>TALAY  </h4><!--
-                                    <i class="icon-map-marker"></i><strong> Sabah 08:00'a Kadar </strong><br>
-                 
-                --><i class="icon-map-marker"></i><strong> 30/08/2026 08:30'e kadar </strong><br><p><i class="icon-home"></i> KÜÇÜKKARAPINAR MAH. IMAMHATIP SOK.NO:5/ZA SARIVELILER/KARAMAN <br><i class="icon-phone"></i> 0338 441 25 13 - <i class="icon-map-marker"></i><a href="https://maps.google.com/?ll=36.692030,32.621679&amp;q=36.692030,32.621679" target="_blank"><b> HARİTA</b></a></p>            </div>
-        </div>
-        <!--</li>-->
-            
-<!--</ul>-->        </div>
-        <div class="col-sm-12 col-md-12" style="padding-right: 35px;padding-left: 15px;">
-            <br>Paylaş : <br>
-            <div class="SocialSharingButtons">
-    <ul class="share-buttons share-buttons-png">
-            <li><a href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fwww.karamaneo.org.tr%2Fnobet-listesi" title="Share on Facebook" target="_blank"><img src="/plugins/martin/ssbuttons/assets/imgs/flat_web_icon_set_color/facebook.png" alt="Facebook"></a></li>
-                <li><a href="https://twitter.com/share?url=https%3A%2F%2Fwww.karamaneo.org.tr%2Fnobet-listesi&amp;text=No%CC%88bet+Listesi" title="Share on Twitter" target="_blank"><img src="/plugins/martin/ssbuttons/assets/imgs/flat_web_icon_set_color/twitter.png" alt="Twitter"></a></li>
-                <li><a href="https://plus.google.com/share?url=https%3A%2F%2Fwww.karamaneo.org.tr%2Fnobet-listesi" title="Share on Google+" target="_blank"><img src="/plugins/martin/ssbuttons/assets/imgs/flat_web_icon_set_color/googleplus.png" alt="Google+"></a></li>
-                <li><a href="https://www.tumblr.com/share?v=3&amp;u=https%3A%2F%2Fwww.karamaneo.org.tr%2Fnobet-listesi&amp;t=No%CC%88bet+Listesi&amp;s=" title="Post to Tumblr" target="_blank"><img src="/plugins/martin/ssbuttons/assets/imgs/flat_web_icon_set_color/tumblr.png" alt="Tumblr"></a></li>
-                <li><a href="https://pinterest.com/pin/create/button/?url=https%3A%2F%2Fwww.karamaneo.org.tr%2Fnobet-listesi&amp;description=No%CC%88bet+Listesi" title="Pin it" target="_blank"><img src="/plugins/martin/ssbuttons/assets/imgs/flat_web_icon_set_color/pinterest.png" alt="Pinterest"></a></li>
-                <li><a href="https://getpocket.com/save?url=https%3A%2F%2Fwww.karamaneo.org.tr%2Fnobet-listesi&amp;title=No%CC%88bet+Listesi" title="Add to Pocket" target="_blank"><img src="/plugins/martin/ssbuttons/assets/imgs/flat_web_icon_set_color/pocket.png" alt="Pocket"></a></li>
-                <li><a href="https://www.reddit.com/submit?url=https%3A%2F%2Fwww.karamaneo.org.tr%2Fnobet-listesi&amp;title=No%CC%88bet+Listesi" title="Submit to Reddit" target="_blank"><img src="/plugins/martin/ssbuttons/assets/imgs/flat_web_icon_set_color/reddit.png" alt="Reddit"></a></li>
-                <li><a href="https://www.linkedin.com/shareArticle?mini=true&amp;url=https%3A%2F%2Fwww.karamaneo.org.tr%2Fnobet-listesi&amp;title=No%CC%88bet+Listesi" title="Share on LinkedIn" target="_blank"><img src="/plugins/martin/ssbuttons/assets/imgs/flat_web_icon_set_color/linkedin.png" alt="LinkedIn"></a></li>
-                <li><a href="https://wordpress.com/press-this.php?u=https%3A%2F%2Fwww.karamaneo.org.tr%2Fnobet-listesi&amp;t=No%CC%88bet+Listesi&amp;s=No%CC%88bet+Listesi" title="Publish on WordPress" target="_blank"><img src="/plugins/martin/ssbuttons/assets/imgs/flat_web_icon_set_color/wordpress.png" alt="WordPress"></a></li>
-                <li><a href="https://pinboard.in/popup_login/?url=https%3A%2F%2Fwww.karamaneo.org.tr%2Fnobet-listesi&amp;title=No%CC%88bet+Listesi&amp;description=No%CC%88bet+Listesi" title="Save to Pinboard" target="_blank"><img src="/plugins/martin/ssbuttons/assets/imgs/flat_web_icon_set_color/pinboard.png" alt="Pinboard"></a></li>
-                <li><a href="mailto:?subject=No%CC%88bet+Listesi&amp;body=No%CC%88bet+Listesi:%20https%3A%2F%2Fwww.karamaneo.org.tr%2Fnobet-listesi" title="Email" target="_blank"><img src="/plugins/martin/ssbuttons/assets/imgs/flat_web_icon_set_color/email.png" alt="Email"></a></li>
-        </ul>
-</div>
-
-        </div>
-    </div>
-    
-</div>            </div>
-        </section>
-
-        <!-- Footer -->
-        <footer id="layout-footer">
-            <div id="footer">
-    <div class="container">
-        <hr>
-        <p class="muted credit">© 2026 <a href="http://vatansoft.com.tr" title="Eczacı Odası Web Sayfası , yazılımı,">VatanSoft EOS Web Yazılımı</a></p>
-    </div>
-</div>        </footer>
-
-        <!-- Scripts -->
-        <script src="https://www.karamaneo.org.tr/combine/b8268bf946d51dcce0c654fa022b23d8-1548920784"></script>
-        <script src="/modules/system/assets/js/framework.js"></script>
-<script src="/modules/system/assets/js/framework.extras.js"></script>
-<link rel="stylesheet" property="stylesheet" href="/modules/system/assets/css/framework.extras.css">
-            <script>
-        	$( function() {
-            $( "#dialog" ).dialog({
-              autoOpen: false,
-        	  width: 910,
-        	  height: 450,
-              show: {
-                effect: "blind",
-                duration: 1000
-              },
-              hide: {
-                effect: "explode",
-                duration: 1000
-              }
-            });
-       
-               
-  
-             //$( "#dialog" ).dialog( "open" );
-            
-          } );
-        $(window).load(function(){        
-   $('#myModal').modal('show');
-    }); 
-         
-    </script>
-    <script>
-  $(window).load(function() {
-    $('#loading').hide();
-  });
-</script>
-        
-<div class="stripe-loading-indicator loaded"><div class="stripe"></div><div class="stripe-loaded"></div></div></body></html>
+</body></html>
