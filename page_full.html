@@ -15,14 +15,14 @@
             <p class="lead">We're sorry, but an unhandled error occurred. Please see the details below.</p>
 
             <div class="exception-name-block">
-                <div>An exception has been thrown during the rendering of a template ("SQLSTATE[HY000]: General error: 2006 Server has gone away (SQL: select * from information_schema.tables where table_schema = karamaneoorg_karamane_eos and table_name = rainlab_translate_locales)").</div>
-                <p>/home/karamaneoorg/public_html/themes/rainlab-vanilla/layouts/standart_giris.htm <span>line</span> 65</p>
+                <div>file_get_contents(http://ebs.teb.org.tr/nobsis/service.php/nobetler?oda_id=50&amp;il_id=70&amp;ilce_id=1439&amp;baslangic=2019-07-31&amp;bitis=2019-07-31): failed to open stream: Connection timed out</div>
+                <p>/home/karamaneoorg/public_html/themes/rainlab-vanilla/pages/nobet-listesi.htm <span>line</span> 38</p>
             </div>
 
             <ul class="indicators">
                 <li>
                     <h3>Type</h3>
-                    <p>Twig Template</p>
+                    <p>PHP Content</p>
                 </li>
                 <li>
                     <h3>Exception</h3>
@@ -30,7 +30,7 @@
                 </li>
             </ul>
 
-            <div><div id="highlighter_697255" class="syntaxhighlighter  htmlscript"><table border="0" cellpadding="0" cellspacing="0"><tbody><tr><td class="gutter"><div class="line number59 index0 alt2">59</div><div class="line number60 index1 alt1">60</div><div class="line number61 index2 alt2">61</div><div class="line number62 index3 alt1">62</div><div class="line number63 index4 alt2">63</div><div class="line number64 index5 alt1">64</div><div class="line number65 index6 alt2 highlighted">65</div><div class="line number66 index7 alt1">66</div><div class="line number67 index8 alt2">67</div><div class="line number68 index9 alt1">68</div><div class="line number69 index10 alt2">69</div><div class="line number70 index11 alt1">70</div><div class="line number71 index12 alt2">71</div></td><td class="code"><div class="container"><div class="line number59 index0 alt2"><code class="htmlscript spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="htmlscript plain">&lt;/</code><code class="htmlscript keyword">button</code><code class="htmlscript plain">&gt;</code></div><div class="line number60 index1 alt1"><code class="htmlscript spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="htmlscript plain">&lt;</code><code class="htmlscript keyword">a</code> <code class="htmlscript color1">class</code><code class="htmlscript plain">=</code><code class="htmlscript string">"navbar-brand"</code> <code class="htmlscript color1">href</code><code class="htmlscript plain">=</code><code class="htmlscript string">"{{ 'home'|page }}"</code><code class="htmlscript plain">&gt;Anasayfa&lt;/</code><code class="htmlscript keyword">a</code><code class="htmlscript plain">&gt;</code></div><div class="line number61 index2 alt2"><code class="htmlscript plain">&lt;/</code><code class="htmlscript keyword">div</code><code class="htmlscript plain">&gt;</code></div><div class="line number62 index3 alt1"><code class="htmlscript plain">&lt;</code><code class="htmlscript keyword">div</code> <code class="htmlscript color1">class</code><code class="htmlscript plain">=</code><code class="htmlscript string">"collapse navbar-collapse navbar-main-collapse"</code> <code class="htmlscript color1">style</code><code class="htmlscript plain">=</code><code class="htmlscript string">"max-height: 400px;"</code><code class="htmlscript plain">&gt;</code></div><div class="line number63 index4 alt2"><code class="htmlscript spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="htmlscript plain">&lt;</code><code class="htmlscript keyword">ul</code> <code class="htmlscript color1">class</code><code class="htmlscript plain">=</code><code class="htmlscript string">"nav navbar-nav"</code> <code class="htmlscript color1">style</code><code class="htmlscript plain">=</code><code class="htmlscript string">"float: revert;"</code><code class="htmlscript plain">&gt;</code></div><div class="line number64 index5 alt1"><code class="htmlscript spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="htmlscript plain">&lt;</code><code class="htmlscript keyword">li</code> <code class="htmlscript color1">class</code><code class="htmlscript plain">=</code><code class="htmlscript string">"{% if this.page.id == 'account' %}active{% endif %}"</code><code class="htmlscript plain">&gt;&lt;</code><code class="htmlscript keyword">a</code> <code class="htmlscript color1">href</code><code class="htmlscript plain">=</code><code class="htmlscript string">"{{ 'account'|page }}"</code><code class="htmlscript plain">&gt;Üye&lt;/</code><code class="htmlscript keyword">a</code><code class="htmlscript plain">&gt;&lt;/</code><code class="htmlscript keyword">li</code><code class="htmlscript plain">&gt;</code></div><div class="line number65 index6 alt2 highlighted"><code class="htmlscript spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="htmlscript plain">&lt;</code><code class="htmlscript keyword">li</code> <code class="htmlscript color1">class</code><code class="htmlscript plain">=</code><code class="htmlscript string">"{% if this.page.id == 'hakkimizda' %}active{% endif %}"</code><code class="htmlscript plain">&gt;&lt;</code><code class="htmlscript keyword">a</code> <code class="htmlscript color1">href</code><code class="htmlscript plain">=</code><code class="htmlscript string">"{{ 'hakkimizda'|staticPage }}"</code><code class="htmlscript plain">&gt;Hakkımızda&lt;/</code><code class="htmlscript keyword">a</code><code class="htmlscript plain">&gt;&lt;/</code><code class="htmlscript keyword">li</code><code class="htmlscript plain">&gt;</code></div><div class="line number66 index7 alt1"><code class="htmlscript spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="htmlscript plain">&lt;</code><code class="htmlscript keyword">li</code> <code class="htmlscript color1">class</code><code class="htmlscript plain">=</code><code class="htmlscript string">"{% if this.page.id == 'duyuru' %}active{% endif %}"</code><code class="htmlscript plain">&gt;&lt;</code><code class="htmlscript keyword">a</code> <code class="htmlscript color1">href</code><code class="htmlscript plain">=</code><code class="htmlscript string">"{{ 'duyuru'|page }}"</code><code class="htmlscript plain">&gt;Duyurular&lt;/</code><code class="htmlscript keyword">a</code><code class="htmlscript plain">&gt;&lt;/</code><code class="htmlscript keyword">li</code><code class="htmlscript plain">&gt;</code></div><div class="line number67 index8 alt2"><code class="htmlscript spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="htmlscript plain">&lt;</code><code class="htmlscript keyword">li</code> <code class="htmlscript color1">class</code><code class="htmlscript plain">=</code><code class="htmlscript string">"{% if this.page.id == 'tevzi' %}active{% endif %}"</code><code class="htmlscript plain">&gt;&lt;</code><code class="htmlscript keyword">a</code> <code class="htmlscript color1">href</code><code class="htmlscript plain">=</code><code class="htmlscript string">"<a href="https://karamaneo.org.tr/tevzi">https://karamaneo.org.tr/tevzi</a>"</code><code class="htmlscript plain">&gt;Tevzi&lt;/</code><code class="htmlscript keyword">a</code><code class="htmlscript plain">&gt;&lt;/</code><code class="htmlscript keyword">li</code><code class="htmlscript plain">&gt;</code></div><div class="line number68 index9 alt1"><code class="htmlscript spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="htmlscript plain">&lt;</code><code class="htmlscript keyword">li</code> <code class="htmlscript color1">class</code><code class="htmlscript plain">=</code><code class="htmlscript string">"{% if this.page.id == 'eczane-listesi' %}active{% endif %}"</code><code class="htmlscript plain">&gt;&lt;</code><code class="htmlscript keyword">a</code> <code class="htmlscript color1">href</code><code class="htmlscript plain">=</code><code class="htmlscript string">"{{ 'eczane-listesi'|page }}"</code><code class="htmlscript plain">&gt;Eczane Listesi&lt;/</code><code class="htmlscript keyword">a</code><code class="htmlscript plain">&gt;&lt;/</code><code class="htmlscript keyword">li</code><code class="htmlscript plain">&gt;</code></div><div class="line number69 index10 alt2"><code class="htmlscript spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="htmlscript plain">&lt;</code><code class="htmlscript keyword">li</code> <code class="htmlscript color1">class</code><code class="htmlscript plain">=</code><code class="htmlscript string">"{% if this.page.id == 'nobet-listesi' %}active{% endif %}"</code><code class="htmlscript plain">&gt;&lt;</code><code class="htmlscript keyword">a</code> <code class="htmlscript color1">href</code><code class="htmlscript plain">=</code><code class="htmlscript string">"{{ 'nobet-listesi'|page }}"</code><code class="htmlscript plain">&gt;Nöbetçi Eczane&lt;/</code><code class="htmlscript keyword">a</code><code class="htmlscript plain">&gt;&lt;/</code><code class="htmlscript keyword">li</code><code class="htmlscript plain">&gt;</code></div><div class="line number70 index11 alt1"><code class="htmlscript spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="htmlscript plain">&lt;</code><code class="htmlscript keyword">li</code> <code class="htmlscript color1">class</code><code class="htmlscript plain">=</code><code class="htmlscript string">"{% if this.page.id == 'nobet-karti-yazdir' %}active{% endif %}"</code><code class="htmlscript plain">&gt;&lt;</code><code class="htmlscript keyword">a</code> <code class="htmlscript color1">href</code><code class="htmlscript plain">=</code><code class="htmlscript string">"{{ 'nobet-karti-2'|page }}"</code><code class="htmlscript plain">&gt;Nöbet Kartı Yazdır&lt;/</code><code class="htmlscript keyword">a</code><code class="htmlscript plain">&gt;&lt;/</code><code class="htmlscript keyword">li</code><code class="htmlscript plain">&gt;</code></div><div class="line number71 index12 alt2"><code class="htmlscript spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="htmlscript plain">&lt;</code><code class="htmlscript keyword">li</code> <code class="htmlscript color1">class</code><code class="htmlscript plain">=</code><code class="htmlscript string">"{% if this.page.id == 'iletisim' %}active{% endif %}"</code><code class="htmlscript plain">&gt;&lt;</code><code class="htmlscript keyword">a</code> <code class="htmlscript color1">href</code><code class="htmlscript plain">=</code><code class="htmlscript string">"{{ 'iletisim'|page }}"</code><code class="htmlscript plain">&gt;İletişim&lt;/</code><code class="htmlscript keyword">a</code><code class="htmlscript plain">&gt;&lt;/</code><code class="htmlscript keyword">li</code><code class="htmlscript plain">&gt;</code></div></div></td></tr></tbody></table></div></div>
+            <div><div id="highlighter_59682" class="syntaxhighlighter  htmlscript"><table border="0" cellpadding="0" cellspacing="0"><tbody><tr><td class="gutter"><div class="line number32 index0 alt1">32</div><div class="line number33 index1 alt2">33</div><div class="line number34 index2 alt1">34</div><div class="line number35 index3 alt2">35</div><div class="line number36 index4 alt1">36</div><div class="line number37 index5 alt2">37</div><div class="line number38 index6 alt1 highlighted">38</div><div class="line number39 index7 alt2">39</div><div class="line number40 index8 alt1">40</div><div class="line number41 index9 alt2">41</div><div class="line number42 index10 alt1">42</div><div class="line number43 index11 alt2">43</div><div class="line number44 index12 alt1">44</div></td><td class="code"><div class="container"><div class="line number32 index0 alt1"><code class="htmlscript plain">function onStart() {</code></div><div class="line number33 index1 alt2"><code class="htmlscript spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="htmlscript plain">ini_set('allow_url_fopen',1);</code></div><div class="line number34 index2 alt1"><code class="htmlscript spaces">&nbsp;</code>&nbsp;</div><div class="line number35 index3 alt2"><code class="htmlscript spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="htmlscript plain">//$url = file_get_contents('<a href="http://ebs.teb.org.tr/nobsis/service.php/nobetler?oda_id=50&amp;il_id=70&amp;ilce_id=1439&amp;baslangic=">http://ebs.teb.org.tr/nobsis/service.php/nobetler?oda_id=50&amp;il_id=70&amp;ilce_id=1439&amp;baslangic=</a>' . date("Y.m.d", strtotime("-3 hours")) . '&amp;bitis=' . date("Y.m.d", strtotime("-3 hours")) . ''); </code></div><div class="line number36 index4 alt1"><code class="htmlscript spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="htmlscript plain">print_r(date("Y.m.d", strtotime("-3 hours")) . "şimdiki saat: ". date("Y-m-d H:i:s"));</code></div><div class="line number37 index5 alt2"><code class="htmlscript spaces">&nbsp;</code>&nbsp;</div><div class="line number38 index6 alt1 highlighted"><code class="htmlscript spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="htmlscript plain">$url = file_get_contents('<a href="http://ebs.teb.org.tr/nobsis/service.php/nobetler?oda_id=50&amp;il_id=70&amp;ilce_id=1439&amp;baslangic=2019-07-31&amp;bitis=2019-07-31">http://ebs.teb.org.tr/nobsis/service.php/nobetler?oda_id=50&amp;il_id=70&amp;ilce_id=1439&amp;baslangic=2019-07-31&amp;bitis=2019-07-31</a>'); // path to your JSON fil</code></div><div class="line number39 index7 alt2"><code class="htmlscript spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="htmlscript plain">$data = json_decode($url, true);</code></div><div class="line number40 index8 alt1"><code class="htmlscript spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="htmlscript plain">//print_r($data);</code></div><div class="line number41 index9 alt2"><code class="htmlscript spaces">&nbsp;</code>&nbsp;</div><div class="line number42 index10 alt1"><code class="htmlscript spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="htmlscript plain">//$curlSession = curl_init();</code></div><div class="line number43 index11 alt2"><code class="htmlscript spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="htmlscript plain">//curl_setopt($curlSession, CURLOPT_URL, '<a href="http://ebs.teb.org.tr/nobsis/service.php/nobetler?oda_id=50&amp;il_id=70&amp;ilce_id=1439&amp;baslangic=">http://ebs.teb.org.tr/nobsis/service.php/nobetler?oda_id=50&amp;il_id=70&amp;ilce_id=1439&amp;baslangic=</a>' . date("Y.m.d") . '&amp;bitis=' . date("Y.m.d") );</code></div><div class="line number44 index12 alt1"><code class="htmlscript spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="htmlscript plain">//curl_setopt($curlSession, CURLOPT_BINARYTRANSFER, true);</code></div></div></td></tr></tbody></table></div></div>
 
             <h3><i class="icon-code-fork warning"></i> Stack trace</h3>
 
@@ -45,31 +45,31 @@
                 </thead>
                 <tbody>
                                             <tr>
-                            <td class="right">45</td>
-                            <td>
-                                Twig\Template-&gt;displayWithErrorHandling(<abbr title="array(6) [this =&gt; array(7), errors =&gt; object(Illuminate\Support\ViewErrorBag), session =&gt; object(RainLab\User\Components\Session), ssbuttonsssb =&gt; object(Martin\SSButtons\Components\SSButtonsSSB), user =&gt; null, type =&gt; 'png'], array(0)">…</abbr>)
-                            </td>
-                            <td>~/vendor/twig/twig/src/Template.php</td>
-                            <td class="right">378</td>
-                        </tr>
-                                            <tr>
                             <td class="right">44</td>
                             <td>
-                                Twig\Template-&gt;display(<abbr title="array(6) [this =&gt; array(7), errors =&gt; object(Illuminate\Support\ViewErrorBag), session =&gt; object(RainLab\User\Components\Session), ssbuttonsssb =&gt; object(Martin\SSButtons\Components\SSButtonsSSB), user =&gt; null, type =&gt; 'png']">…</abbr>)
+                                file_get_contents(<abbr title="'http://ebs.teb.org.tr/nobsis/service.php/nobetler?oda_id=50&amp;il_id=70&amp;ilce_id=1439&amp;baslangic=2019-07-31&amp;bitis=2019-07-31'">…</abbr>)
                             </td>
-                            <td>~/vendor/twig/twig/src/Template.php</td>
-                            <td class="right">390</td>
+                            <td>~/storage/cms/cache/eb/88/nobet-listesi.htm.php</td>
+                            <td class="right">10</td>
                         </tr>
                                             <tr>
                             <td class="right">43</td>
                             <td>
-                                Twig\Template-&gt;render(<abbr title="array(6) [this =&gt; array(7), errors =&gt; object(Illuminate\Support\ViewErrorBag), session =&gt; object(RainLab\User\Components\Session), ssbuttonsssb =&gt; object(Martin\SSButtons\Components\SSButtonsSSB), user =&gt; null, type =&gt; 'png']">…</abbr>)
+                                Cms6a96c7b035e0d068918370_20d1a68bbf4b7fc239a3b88d6a3b2d0eClass-&gt;onStart()
                             </td>
                             <td>~/modules/cms/classes/Controller.php</td>
-                            <td class="right">435</td>
+                            <td class="right">500</td>
                         </tr>
                                             <tr>
                             <td class="right">42</td>
+                            <td>
+                                Cms\Classes\Controller-&gt;execPageCycle()
+                            </td>
+                            <td>~/modules/cms/classes/Controller.php</td>
+                            <td class="right">394</td>
+                        </tr>
+                                            <tr>
+                            <td class="right">41</td>
                             <td>
                                 Cms\Classes\Controller-&gt;runPage(<abbr title="object(Cms\Classes\Page)">…</abbr>)
                             </td>
@@ -77,7 +77,7 @@
                             <td class="right">225</td>
                         </tr>
                                             <tr>
-                            <td class="right">41</td>
+                            <td class="right">40</td>
                             <td>
                                 Cms\Classes\Controller-&gt;run(<abbr title="'nobet-listesi'">…</abbr>)
                             </td>
@@ -85,7 +85,7 @@
                             <td class="right">50</td>
                         </tr>
                                             <tr>
-                            <td class="right">40</td>
+                            <td class="right">39</td>
                             <td>
                                 Cms\Classes\CmsController-&gt;run(<abbr title="'nobet-listesi'">…</abbr>)
                             </td>
@@ -93,7 +93,7 @@
                             <td class="right"></td>
                         </tr>
                                             <tr>
-                            <td class="right">39</td>
+                            <td class="right">38</td>
                             <td>
                                 call_user_func_array(<abbr title="array(2) [0 =&gt; object(Cms\Classes\CmsController), 1 =&gt; 'run'], array(1) [slug =&gt; 'nobet-listesi']">…</abbr>)
                             </td>
@@ -101,7 +101,7 @@
                             <td class="right">54</td>
                         </tr>
                                             <tr>
-                            <td class="right">38</td>
+                            <td class="right">37</td>
                             <td>
                                 Illuminate\Routing\Controller-&gt;callAction(<abbr title="'run', array(1) [slug =&gt; 'nobet-listesi']">…</abbr>)
                             </td>
@@ -109,7 +109,7 @@
                             <td class="right">45</td>
                         </tr>
                                             <tr>
-                            <td class="right">37</td>
+                            <td class="right">36</td>
                             <td>
                                 Illuminate\Routing\ControllerDispatcher-&gt;dispatch(<abbr title="object(Illuminate\Routing\Route), object(Cms\Classes\CmsController), 'run'">…</abbr>)
                             </td>
@@ -117,7 +117,7 @@
                             <td class="right">212</td>
                         </tr>
                                             <tr>
-                            <td class="right">36</td>
+                            <td class="right">35</td>
                             <td>
                                 Illuminate\Routing\Route-&gt;runController()
                             </td>
@@ -125,7 +125,7 @@
                             <td class="right">169</td>
                         </tr>
                                             <tr>
-                            <td class="right">35</td>
+                            <td class="right">34</td>
                             <td>
                                 Illuminate\Routing\Route-&gt;run()
                             </td>
@@ -133,7 +133,7 @@
                             <td class="right">658</td>
                         </tr>
                                             <tr>
-                            <td class="right">34</td>
+                            <td class="right">33</td>
                             <td>
                                 Illuminate\Routing\Router-&gt;Illuminate\Routing\{closure}(<abbr title="object(Illuminate\Http\Request)">…</abbr>)
                             </td>
@@ -141,7 +141,7 @@
                             <td class="right">30</td>
                         </tr>
                                             <tr>
-                            <td class="right">33</td>
+                            <td class="right">32</td>
                             <td>
                                 Illuminate\Routing\Pipeline-&gt;Illuminate\Routing\{closure}(<abbr title="object(Illuminate\Http\Request)">…</abbr>)
                             </td>
@@ -149,7 +149,7 @@
                             <td class="right">41</td>
                         </tr>
                                             <tr>
-                            <td class="right">32</td>
+                            <td class="right">31</td>
                             <td>
                                 Illuminate\Routing\Middleware\SubstituteBindings-&gt;handle(<abbr title="object(Illuminate\Http\Request), object(Closure)">…</abbr>)
                             </td>
@@ -157,7 +157,7 @@
                             <td class="right">149</td>
                         </tr>
                                             <tr>
-                            <td class="right">31</td>
+                            <td class="right">30</td>
                             <td>
                                 Illuminate\Pipeline\Pipeline-&gt;Illuminate\Pipeline\{closure}(<abbr title="object(Illuminate\Http\Request)">…</abbr>)
                             </td>
@@ -165,7 +165,7 @@
                             <td class="right">53</td>
                         </tr>
                                             <tr>
-                            <td class="right">30</td>
+                            <td class="right">29</td>
                             <td>
                                 Illuminate\Routing\Pipeline-&gt;Illuminate\Routing\{closure}(<abbr title="object(Illuminate\Http\Request)">…</abbr>)
                             </td>
@@ -173,7 +173,7 @@
                             <td class="right">49</td>
                         </tr>
                                             <tr>
-                            <td class="right">29</td>
+                            <td class="right">28</td>
                             <td>
                                 Illuminate\View\Middleware\ShareErrorsFromSession-&gt;handle(<abbr title="object(Illuminate\Http\Request), object(Closure)">…</abbr>)
                             </td>
@@ -181,7 +181,7 @@
                             <td class="right">149</td>
                         </tr>
                                             <tr>
-                            <td class="right">28</td>
+                            <td class="right">27</td>
                             <td>
                                 Illuminate\Pipeline\Pipeline-&gt;Illuminate\Pipeline\{closure}(<abbr title="object(Illuminate\Http\Request)">…</abbr>)
                             </td>
@@ -189,7 +189,7 @@
                             <td class="right">53</td>
                         </tr>
                                             <tr>
-                            <td class="right">27</td>
+                            <td class="right">26</td>
                             <td>
                                 Illuminate\Routing\Pipeline-&gt;Illuminate\Routing\{closure}(<abbr title="object(Illuminate\Http\Request)">…</abbr>)
                             </td>
@@ -197,7 +197,7 @@
                             <td class="right">63</td>
                         </tr>
                                             <tr>
-                            <td class="right">26</td>
+                            <td class="right">25</td>
                             <td>
                                 Illuminate\Session\Middleware\StartSession-&gt;handle(<abbr title="object(Illuminate\Http\Request), object(Closure)">…</abbr>)
                             </td>
@@ -205,7 +205,7 @@
                             <td class="right">149</td>
                         </tr>
                                             <tr>
-                            <td class="right">25</td>
+                            <td class="right">24</td>
                             <td>
                                 Illuminate\Pipeline\Pipeline-&gt;Illuminate\Pipeline\{closure}(<abbr title="object(Illuminate\Http\Request)">…</abbr>)
                             </td>
@@ -213,7 +213,7 @@
                             <td class="right">53</td>
                         </tr>
                                             <tr>
-                            <td class="right">24</td>
+                            <td class="right">23</td>
                             <td>
                                 Illuminate\Routing\Pipeline-&gt;Illuminate\Routing\{closure}(<abbr title="object(Illuminate\Http\Request)">…</abbr>)
                             </td>
@@ -221,7 +221,7 @@
                             <td class="right">37</td>
                         </tr>
                                             <tr>
-                            <td class="right">23</td>
+                            <td class="right">22</td>
                             <td>
                                 Illuminate\Cookie\Middleware\AddQueuedCookiesToResponse-&gt;handle(<abbr title="object(Illuminate\Http\Request), object(Closure)">…</abbr>)
                             </td>
@@ -229,7 +229,7 @@
                             <td class="right">149</td>
                         </tr>
                                             <tr>
-                            <td class="right">22</td>
+                            <td class="right">21</td>
                             <td>
                                 Illuminate\Pipeline\Pipeline-&gt;Illuminate\Pipeline\{closure}(<abbr title="object(Illuminate\Http\Request)">…</abbr>)
                             </td>
@@ -237,7 +237,7 @@
                             <td class="right">53</td>
                         </tr>
                                             <tr>
-                            <td class="right">21</td>
+                            <td class="right">20</td>
                             <td>
                                 Illuminate\Routing\Pipeline-&gt;Illuminate\Routing\{closure}(<abbr title="object(Illuminate\Http\Request)">…</abbr>)
                             </td>
@@ -245,7 +245,7 @@
                             <td class="right">68</td>
                         </tr>
                                             <tr>
-                            <td class="right">20</td>
+                            <td class="right">19</td>
                             <td>
                                 Illuminate\Cookie\Middleware\EncryptCookies-&gt;handle(<abbr title="object(Illuminate\Http\Request), object(Closure)">…</abbr>)
                             </td>
@@ -253,7 +253,7 @@
                             <td class="right">149</td>
                         </tr>
                                             <tr>
-                            <td class="right">19</td>
+                            <td class="right">18</td>
                             <td>
                                 Illuminate\Pipeline\Pipeline-&gt;Illuminate\Pipeline\{closure}(<abbr title="object(Illuminate\Http\Request)">…</abbr>)
                             </td>
@@ -261,7 +261,7 @@
                             <td class="right">53</td>
                         </tr>
                                             <tr>
-                            <td class="right">18</td>
+                            <td class="right">17</td>
                             <td>
                                 Illuminate\Routing\Pipeline-&gt;Illuminate\Routing\{closure}(<abbr title="object(Illuminate\Http\Request)">…</abbr>)
                             </td>
@@ -269,7 +269,7 @@
                             <td class="right">102</td>
                         </tr>
                                             <tr>
-                            <td class="right">17</td>
+                            <td class="right">16</td>
                             <td>
                                 Illuminate\Pipeline\Pipeline-&gt;then(<abbr title="object(Closure)">…</abbr>)
                             </td>
@@ -277,7 +277,7 @@
                             <td class="right">660</td>
                         </tr>
                                             <tr>
-                            <td class="right">16</td>
+                            <td class="right">15</td>
                             <td>
                                 Illuminate\Routing\Router-&gt;runRouteWithinStack(<abbr title="object(Illuminate\Routing\Route), object(Illuminate\Http\Request)">…</abbr>)
                             </td>
@@ -285,7 +285,7 @@
                             <td class="right">635</td>
                         </tr>
                                             <tr>
-                            <td class="right">15</td>
+                            <td class="right">14</td>
                             <td>
                                 Illuminate\Routing\Router-&gt;runRoute(<abbr title="object(Illuminate\Http\Request), object(Illuminate\Routing\Route)">…</abbr>)
                             </td>
@@ -293,7 +293,7 @@
                             <td class="right">601</td>
                         </tr>
                                             <tr>
-                            <td class="right">14</td>
+                            <td class="right">13</td>
                             <td>
                                 Illuminate\Routing\Router-&gt;dispatchToRoute(<abbr title="object(Illuminate\Http\Request)">…</abbr>)
                             </td>
@@ -301,7 +301,7 @@
                             <td class="right">20</td>
                         </tr>
                                             <tr>
-                            <td class="right">13</td>
+                            <td class="right">12</td>
                             <td>
                                 October\Rain\Router\CoreRouter-&gt;dispatch(<abbr title="object(Illuminate\Http\Request)">…</abbr>)
                             </td>
@@ -309,7 +309,7 @@
                             <td class="right">176</td>
                         </tr>
                                             <tr>
-                            <td class="right">12</td>
+                            <td class="right">11</td>
                             <td>
                                 Illuminate\Foundation\Http\Kernel-&gt;Illuminate\Foundation\Http\{closure}(<abbr title="object(Illuminate\Http\Request)">…</abbr>)
                             </td>
@@ -317,7 +317,7 @@
                             <td class="right">30</td>
                         </tr>
                                             <tr>
-                            <td class="right">11</td>
+                            <td class="right">10</td>
                             <td>
                                 Illuminate\Routing\Pipeline-&gt;Illuminate\Routing\{closure}(<abbr title="object(Illuminate\Http\Request)">…</abbr>)
                             </td>
@@ -325,7 +325,7 @@
                             <td class="right">46</td>
                         </tr>
                                             <tr>
-                            <td class="right">10</td>
+                            <td class="right">9</td>
                             <td>
                                 Illuminate\Foundation\Http\Middleware\CheckForMaintenanceMode-&gt;handle(<abbr title="object(Illuminate\Http\Request), object(Closure)">…</abbr>)
                             </td>
@@ -333,7 +333,7 @@
                             <td class="right">25</td>
                         </tr>
                                             <tr>
-                            <td class="right">9</td>
+                            <td class="right">8</td>
                             <td>
                                 October\Rain\Foundation\Http\Middleware\CheckForMaintenanceMode-&gt;handle(<abbr title="object(Illuminate\Http\Request), object(Closure)">…</abbr>)
                             </td>
@@ -341,7 +341,7 @@
                             <td class="right">149</td>
                         </tr>
                                             <tr>
-                            <td class="right">8</td>
+                            <td class="right">7</td>
                             <td>
                                 Illuminate\Pipeline\Pipeline-&gt;Illuminate\Pipeline\{closure}(<abbr title="object(Illuminate\Http\Request)">…</abbr>)
                             </td>
@@ -349,7 +349,7 @@
                             <td class="right">53</td>
                         </tr>
                                             <tr>
-                            <td class="right">7</td>
+                            <td class="right">6</td>
                             <td>
                                 Illuminate\Routing\Pipeline-&gt;Illuminate\Routing\{closure}(<abbr title="object(Illuminate\Http\Request)">…</abbr>)
                             </td>
@@ -357,7 +357,7 @@
                             <td class="right">46</td>
                         </tr>
                                             <tr>
-                            <td class="right">6</td>
+                            <td class="right">5</td>
                             <td>
                                 October\Rain\Http\Middleware\TrustHosts-&gt;handle(<abbr title="object(Illuminate\Http\Request), object(Closure)">…</abbr>)
                             </td>
@@ -365,7 +365,7 @@
                             <td class="right">149</td>
                         </tr>
                                             <tr>
-                            <td class="right">5</td>
+                            <td class="right">4</td>
                             <td>
                                 Illuminate\Pipeline\Pipeline-&gt;Illuminate\Pipeline\{closure}(<abbr title="object(Illuminate\Http\Request)">…</abbr>)
                             </td>
@@ -373,7 +373,7 @@
                             <td class="right">53</td>
                         </tr>
                                             <tr>
-                            <td class="right">4</td>
+                            <td class="right">3</td>
                             <td>
                                 Illuminate\Routing\Pipeline-&gt;Illuminate\Routing\{closure}(<abbr title="object(Illuminate\Http\Request)">…</abbr>)
                             </td>
@@ -381,7 +381,7 @@
                             <td class="right">102</td>
                         </tr>
                                             <tr>
-                            <td class="right">3</td>
+                            <td class="right">2</td>
                             <td>
                                 Illuminate\Pipeline\Pipeline-&gt;then(<abbr title="object(Closure)">…</abbr>)
                             </td>
@@ -389,7 +389,7 @@
                             <td class="right">151</td>
                         </tr>
                                             <tr>
-                            <td class="right">2</td>
+                            <td class="right">1</td>
                             <td>
                                 Illuminate\Foundation\Http\Kernel-&gt;sendRequestThroughRouter(<abbr title="object(Illuminate\Http\Request)">…</abbr>)
                             </td>
@@ -397,7 +397,7 @@
                             <td class="right">116</td>
                         </tr>
                                             <tr>
-                            <td class="right">1</td>
+                            <td class="right">0</td>
                             <td>
                                 Illuminate\Foundation\Http\Kernel-&gt;handle(<abbr title="object(Illuminate\Http\Request)">…</abbr>)
                             </td>
@@ -412,8 +412,8 @@
             SyntaxHighlighter.defaults['toolbar'] = false;
             SyntaxHighlighter.defaults['quick-code'] = false;
             SyntaxHighlighter.defaults['html-script'] = true;
-            SyntaxHighlighter.defaults['first-line'] = 59;
-            SyntaxHighlighter.defaults['highlight'] = 65;
+            SyntaxHighlighter.defaults['first-line'] = 32;
+            SyntaxHighlighter.defaults['highlight'] = 38;
             SyntaxHighlighter.all()
         </script>
     
